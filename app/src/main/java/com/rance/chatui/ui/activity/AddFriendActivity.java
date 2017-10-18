@@ -149,6 +149,7 @@ public class AddFriendActivity extends Activity {
 
             }
         });
+        Log.i("git 学习","提交到github上");
     }
 
     @OnClick(R.id.llSearchUser)
