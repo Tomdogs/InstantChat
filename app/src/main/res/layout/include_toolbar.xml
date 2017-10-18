@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        >
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivToolbarNavigation"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_back"/>
+
+        <View
+            android:id="@+id/vToolbarDivision"
+            android:layout_width="40px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ivToolbarNavigation"
+            android:background="@drawable/shape_vertical_line"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/llToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/vToolbarDivision"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="36px"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_margin_right"
+            android:orientation="horizontal"
+            android:id="@+id/lineadd_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--加号菜单-->
+            <ImageButton
+                android:id="@+id/ibAddMenu"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="@null"
+                android:src="@mipmap/ic_add"
+
+                />
+
+            <!--人物图像-->
+            <ImageButton
+                android:id="@+id/ibUserPicture"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@null"
+                android:visibility="gone"
+                android:src="@mipmap/ic_offical"
+                />
+
+            <!--群组图像-->
+            <ImageButton
+                android:id="@+id/ibGroupPicture"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@null"
+                android:visibility="gone"
+                android:src="@mipmap/ic_group_cheat"
+                />
+
+            <!--添加好友-->
+            <TextView
+                android:id="@+id/ibAddFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="36px"
+                android:text="@string/add_friend"
+
+                />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_marginRight="@dimen/item_margin_right"
+            android:layout_toLeftOf="@id/lineadd_picture"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/ic_search"
+            android:background="@null"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

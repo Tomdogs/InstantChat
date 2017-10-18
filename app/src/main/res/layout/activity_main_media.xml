@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f7fa"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="60dp"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:id="@+id/HorizontalScrollView3"
+
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/vedioLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vImageView"/>
+
+    <LinearLayout
+
+        android:id="@+id/linearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:onClick="buttonVedio"
+            android:id="@+id/buttonVedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:text="摄像"/>
+
+        <Button
+            android:onClick="sendAllContent"
+            android:id="@+id/sendAllContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:text="发送"/>
+
+    </LinearLayout>
+</LinearLayout>

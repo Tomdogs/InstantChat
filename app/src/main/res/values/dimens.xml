@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="content_horizontal_margin">10dp</dimen>
+    <dimen name="content_vertical_margin">10dp</dimen>
+    <dimen name="content_small">5dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_title">19sp</dimen>
+    <dimen name="text_subhead">17sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_caption">13sp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp100">100dp</dimen>
+
+    <dimen name="text_time_body">13sp</dimen>
+
+    <!--列表item间距-->
+    <dimen name="item_margin_left_and_right">25px</dimen>
+    <dimen name="item_margin_top_and_bottom">15px</dimen>
+
+    <dimen name="item_margin_right">30px</dimen>
+
+    <!--选项间距-->
+    <dimen name="option_item_margin_top">42px</dimen>
+    <dimen name="option_item_margin_left">40px</dimen>
+    <dimen name="option_item_margin_right">40px</dimen>
+
+    <dimen name="px100">100px</dimen>
+
+    <dimen name="item_size_title">18sp</dimen>
+    <dimen name="item_size_low_title">10sp</dimen>
+</resources>

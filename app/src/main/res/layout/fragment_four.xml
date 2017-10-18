@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="178px"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@drawable/selector_option_item"
+        android:gravity="center_vertical"
+        android:paddingRight="6px">
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="@dimen/option_item_margin_right"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6px"
+                android:singleLine="true"
+                android:text="万里国度"
+                android:textColor="@color/gray0"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6px"
+                android:singleLine="true"
+                android:text="IM账号"
+                android:textColor="@color/gray2"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivQRCordCard"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/option_item_margin_right"
+            android:src="@mipmap/ic_qr_code"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_marginRight="@dimen/option_item_margin_left"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/ic_sellection"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="CSDN"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+  <!--  <TextView
+        android:layout_marginLeft="@dimen/dp25"
+        android:layout_marginRight="@dimen/dp25"
+        android:background="@color/gray5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>-->
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_marginRight="@dimen/option_item_margin_left"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/th_implus"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="表情"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_marginRight="@dimen/option_item_margin_left"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/ic_sellection"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="收藏"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+ <!--   <TextView
+
+        android:layout_marginLeft="@dimen/dp25"
+        android:layout_marginRight="@dimen/dp25"
+        android:background="@color/gray5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>-->
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_marginRight="@dimen/option_item_margin_left"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/icon_chat_photo"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="相册"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/setting"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_marginRight="@dimen/option_item_margin_left"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/ic_setting_blue"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_me_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray5"
+    tools:context="com.rance.chatui.ui.activity.MeSettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <include layout="@layout/include_toolbar"></include>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="新消息提醒"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="勿扰模式"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="聊天"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="隐私"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="通用"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="账号安全"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="关于及时通讯IM"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="帮助与反馈"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout><View
+    style="@style/Line"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    />
+
+
+    <LinearLayout
+
+        android:id="@+id/line_singout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:clickable="true"
+        android:background="@drawable/selector_option_item"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/option_item_margin_left"
+            android:layout_gravity="center_vertical"
+            android:text="退出"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

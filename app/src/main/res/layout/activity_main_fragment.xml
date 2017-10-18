@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <include layout="@layout/include_toolbar"></include>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_controller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray5" />
+
+    <RadioGroup
+        android:id="@+id/rgcontroller"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <!-- android:checked="true" 第一次不加载-->
+        <RadioButton
+            android:id="@+id/rbone"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="聊天"
+            android:button="@null"
+            android:textSize="10sp"
+            android:gravity="center"
+
+            android:drawableTop="@drawable/select_btn_chat"
+            />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rbtwo"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="通讯录"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_btn_contact" />
+
+
+
+        <RadioButton
+            android:id="@+id/rbthree"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="10sp"
+            android:drawableTop="@drawable/select_btn_internal"/>
+
+
+        <RadioButton
+            android:id="@+id/rbfour"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我"
+            android:textSize="10sp"
+            android:drawableTop="@drawable/select_btn_my"/>
+
+
+    </RadioGroup>
+</LinearLayout>

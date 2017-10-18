@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_controller"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.99"
+        android:background="#E6E6E6" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b5b5b5" />
+
+    <RadioGroup
+        style="@style/text_body"
+        android:id="@+id/rgcontroller"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbone"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:button="@null"
+
+
+            android:drawableTop="@drawable/tt_tab_chat_nor1"
+            android:gravity="center"
+            android:text="聊天"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#b5b5b5" />
+
+        <RadioButton
+            android:id="@+id/rbtwo"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.98"
+            android:button="@null"
+
+            android:drawableTop="@drawable/tt_tab_contact_nor1"
+            android:gravity="center"
+            android:text="联系人" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#b5b5b5" />
+
+        <RadioButton
+            android:id="@+id/rbthree"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tt_tab_internal_nor1"
+            android:gravity="center"
+            android:text="发现" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#b5b5b5" />
+
+        <RadioButton
+            android:id="@+id/rbfour"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tt_tab_me_nor1"
+            android:gravity="center"
+            android:text="我" />
+
+        <!--<View-->
+            <!--android:layout_width="0.5dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#b5b5b5" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rbfive"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="第五页"-->
+            <!--android:textColor="@drawable/selector_textcolor" />-->
+
+    </RadioGroup>
+</LinearLayout>

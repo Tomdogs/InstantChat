@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray5"
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <include layout="@layout/include_toolbar"></include>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        >
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/magnifying_glass"
+            />
+
+        <EditText
+            android:layout_weight="4"
+            android:id="@+id/edit_addfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+
+            android:hint="请输入对方名称"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/btn_searchfriend"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/searchcolor"
+            android:textColor="#FFF"
+            android:text="搜索"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llSearchUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_marginTop="10px"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_friend_search_green"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:text="@string/wechat_qq_phone"
+            android:textColor="@color/gray3"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="5px"
+            android:background="@drawable/shape_bottom_green"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:background="#a6d79a"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/img_seachFriend"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+           android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="搜索的结果"
+            android:id="@+id/searchResult"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_add"
+            android:id="@+id/img_addFriend"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_response"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp10"
+        android:text="新的好友："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notAddFrieds"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notAddListview"
+        android:padding="10dp"
+        android:textColor="#ff000000"
+        />
+
+</LinearLayout>

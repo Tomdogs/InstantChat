@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/dp100">
+
+    <TextView
+        android:id="@+id/chat_function_photo"
+        style="@style/text_body"
+        android:drawablePadding="@dimen/content_vertical_margin"
+        android:drawableTop="@mipmap/icon_chat_photo"
+        android:gravity="center"
+        android:text="相册" />
+
+    <TextView
+        android:id="@+id/chat_function_photograph"
+        style="@style/text_body"
+        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        android:drawablePadding="@dimen/content_vertical_margin"
+        android:drawableTop="@mipmap/icon_chat_photograph"
+        android:gravity="center"
+        android:text="拍照" />
+
+    <TextView
+        android:id="@+id/chat_function_file"
+        style="@style/text_body"
+        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        android:drawablePadding="@dimen/content_vertical_margin"
+        android:drawableTop="@mipmap/file_send"
+        android:gravity="center"
+        android:text="文件传输"
+        android:layout_height="92dp" />
+
+    <TextView
+        android:id="@+id/chat_function_video"
+        style="@style/text_body"
+        android:layout_marginLeft="@dimen/content_horizontal_margin"
+        android:drawablePadding="@dimen/content_vertical_margin"
+        android:drawableTop="@mipmap/video_send"
+        android:gravity="center"
+        android:text="录像" />
+</LinearLayout>

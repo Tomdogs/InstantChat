@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+        <include layout="@layout/include_toolbar"></include>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/recent_chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scrollbarStyle="insideOverlay"
+            app:layout_progress="@layout/view_progress"
+            app:layout_empty="@layout/view_empty"
+            android:background="@color/bg_content"
+            />
+
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/top"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            android:padding="@dimen/dp100"
+            android:src="@mipmap/ic_top"
+            app:fab_colorNormal="?colorAccent"
+            app:fab_colorPressed="?colorAccent"
+            app:fab_size="mini"
+            app:fab_progress_showBackground="true"
+
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/picture2"
+            android:layout_marginLeft="@dimen/dp10"
+            android:id="@+id/imgae"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_toRightOf="@id/imgae"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:paddingLeft="@dimen/dp10"
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JID"/>
+
+            <CheckBox
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ckb"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
